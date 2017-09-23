@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경품 추첨" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOJ-bd-YXC">
+                                <rect key="frame" x="58" y="77" width="260" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-9S-ddL">
+                                <rect key="frame" x="56.5" y="491" width="262.5" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AlG-9S-ddL" secondAttribute="height" multiplier="176:57" id="a87-2R-Kmb"/>
+                                </constraints>
+                                <state key="normal" image="btn">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행운의번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yu-bc-kOK">
+                                <rect key="frame" x="58" y="331" width="259.5" height="72"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3Fh-BH-BpX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="369"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Fh-BH-BpX" secondAttribute="height" multiplier="125:123" id="qed-7V-e27"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AlG-9S-ddL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="DhG-5m-QV1"/>
+                            <constraint firstItem="3Fh-BH-BpX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dhs-DG-NBW"/>
+                            <constraint firstItem="AlG-9S-ddL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L3X-yC-eFm"/>
+                            <constraint firstItem="iOJ-bd-YXC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rbs-Gk-Xeq"/>
+                            <constraint firstItem="iOJ-bd-YXC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="bWh-84-AL0"/>
+                            <constraint firstItem="8Yu-bc-kOK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dC8-WD-ntQ"/>
+                            <constraint firstItem="3Fh-BH-BpX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iFN-zL-qTm"/>
+                            <constraint firstItem="8Yu-bc-kOK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.1" id="iio-BX-qwT"/>
+                            <constraint firstAttribute="trailing" secondItem="3Fh-BH-BpX" secondAttribute="trailing" id="tsd-t2-Q1d"/>
+                            <constraint firstItem="iOJ-bd-YXC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="zPX-jL-dqw"/>
+                            <constraint firstItem="AlG-9S-ddL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="zpy-LJ-YOF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoLabel" destination="iOJ-bd-YXC" id="dRh-iP-uZP"/>
+                        <outlet property="numberLabel" destination="8Yu-bc-kOK" id="JSS-Ih-Jvw"/>
+                        <outlet property="pickButton" destination="AlG-9S-ddL" id="8bY-oU-h4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328.80000000000001" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="750" height="800"/>
+        <image name="btn" width="352" height="114"/>
+    </resources>
+</document>
